@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://pokerai.bet/docs.en
+    about: Full API documentation (English)
+  - name: 中文文档
+    url: https://pokerai.bet/docs
+    about: 完整 API 文档(中文)
+  - name: Interactive API reference
+    url: https://pokerai.bet/reference
+    about: Try every endpoint live in the browser
