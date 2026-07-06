@@ -27,6 +27,16 @@ curl -s https://pokerai.bet/v1/gto/preflop \
 
 > Hero (MP) with AhKh facing a UTG open: raise 100% of the time, to 9bb.
 
+### Official clients
+
+| Package | Registry | Install |
+|---|---|---|
+| [`pokerai-bet`](https://pypi.org/project/pokerai-bet/) | PyPI · Python | `pip install pokerai-bet` |
+| [`@pokerai/client`](https://www.npmjs.com/package/@pokerai/client) | npm · TS/JS | `npm install @pokerai/client` |
+| [`@pokerai/mcp`](https://www.npmjs.com/package/@pokerai/mcp) | npm · MCP server | `npx @pokerai/mcp` — GTO as tools for LLM agents |
+
+Typed, auto-generated from the [OpenAPI spec](https://pokerai.bet/openapi.yaml) — always in sync with the API.
+
 ### Free tier
 
 **1,000 presolved lookups + 25 real-time solves per month, no credit card.** → [Get a key](https://pokerai.bet/login)
@@ -49,6 +59,8 @@ Training, coaching, hand review, study, and research. **Real-time assistance (RT
 **面向 6-max 无限德州的 solver 级 GTO 策略,一次 HTTP 调用。**
 
 每一街的混合频率 GTO 策略:preflop 与 flop 来自**数百万预解方案**(毫秒级),turn/river 在实时求解池上**按需求解**。每个请求**无状态、自包含**——发局面、拿策略;不给单一「最优手」,而是给每个动作的**频率**,你按自己的策略随机化。
+
+**官方客户端**:`pip install pokerai-bet`(Python)· `npm install @pokerai/client`(TS/JS)· `npx @pokerai/mcp`(MCP,给 LLM agent)。均从 [OpenAPI 规范](https://pokerai.bet/openapi.yaml)自动生成、全类型化。
 
 **免费层**:每月 1,000 预解查询 + 25 实时求解,免信用卡 → [拿 Key](https://pokerai.bet/login)。
 
