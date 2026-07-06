@@ -17,15 +17,19 @@ Mixed-frequency GTO strategy for **every street** of 6-max No-Limit Hold'em. Pre
 ```bash
 curl -s https://pokerai.bet/v1/gto/preflop \
   -H "Authorization: Bearer $POKERAI_API_KEY" -H "Content-Type: application/json" \
-  -d '{"hole_cards":"AhKh","positions":{"hero":"MP"},
-       "preflop_actions":[{"position":"UTG","action":"raise","amount":3}]}'
+  -d '{"hole_cards":"9h9s","positions":{"hero":"MP"},
+       "preflop_actions":[{"position":"SB","action":"small blind","amount":0.5},
+                          {"position":"BB","action":"big blind","amount":1},
+                          {"position":"UTG","action":"raise","amount":2.5}]}'
 ```
 ```json
-{"hole_cards":"AhKh","situation":"Raise",
- "strategy":[{"action":"raise","frequency":1,"amount_bb":9,"sizing_pot":0.8}]}
+{"hole_cards":"9h9s","situation":"Raise",
+ "strategy":[{"action":"fold","frequency":0.254},
+             {"action":"call","frequency":0.106},
+             {"action":"raise","frequency":0.64,"amount_bb":9,"sizing_pot":1}]}
 ```
 
-> Hero (MP) with AhKh facing a UTG open: raise 100% of the time, to 9bb.
+> Hero (MP) with 9♥9♠ facing a UTG open — a genuinely mixed spot: **raise 64%, call 11%, fold 25%.** The API returns the frequency of each action; you randomize per your own strategy.
 
 ### Official clients
 
