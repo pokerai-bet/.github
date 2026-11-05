@@ -43,7 +43,7 @@ Typed, auto-generated from the [OpenAPI spec](https://pokerai.bet/openapi.yaml) 
 
 ### Free tier
 
-**1,000 presolved lookups + 25 real-time solves per month, no credit card.** → [Get a key](https://pokerai.bet/login)
+**10 presolved lookups + 5 real-time solves per month, no credit card.** → [Get a key](https://pokerai.bet/login)
 
 ### Built with it
 
@@ -66,7 +66,7 @@ Training, coaching, hand review, study, and research. **Real-time assistance (RT
 
 **官方客户端**:`pip install pokerai-bet`(Python)· `npm install @pokerai/client`(TS/JS)· `npx @pokerai/mcp`(MCP,给 LLM agent)。均从 [OpenAPI 规范](https://pokerai.bet/openapi.yaml)自动生成、全类型化。
 
-**免费层**:每月 1,000 预解查询 + 25 实时求解,免信用卡 → [拿 Key](https://pokerai.bet/login)。
+**免费层**:每月 10 次预解查询 + 5 次实时求解,免信用卡 → [拿 Key](https://pokerai.bet/login)。
 
 文档:[中文文档](https://pokerai.bet/docs) · [交互式参考](https://pokerai.bet/reference) · [定价](https://pokerai.bet/zh/pricing)
 
